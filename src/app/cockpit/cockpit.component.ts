@@ -12,18 +12,18 @@ export class CockpitComponent {
   constructor() {}
 
   onAddServer() {
-    this.serverElements.push({
-      type: 'server',
-      name: this.newServerName,
-      content: this.newServerContent
-    });
+    // this.serverElements.push({
+    //   type: 'server',
+    //   name: this.newServerName,
+    //   content: this.newServerContent
+    // });
   }
 
   onAddBlueprint() {
-    this.serverElements.push({
-      type: 'blueprint',
-      name: this.newServerName,
-      content: this.newServerContent
-    });
+    // this.serverElements.push({
+    //   type: 'blueprint',
+    //   name: this.newServerName,
+    //   content: this.newServerContent
+    // });
   }
 }
