@@ -17,7 +17,6 @@ export class CockpitComponent {
   constructor() {}
 
   onAddServer(serverName: HTMLInputElement) {
-    console.log(this.serverContentInput);
     this.serverCreated.emit({
       serverName: serverName.value,
       serverContent: this.serverContentInput.nativeElement.value,
@@ -25,8 +24,6 @@ export class CockpitComponent {
   }
 
   onAddBlueprint(serverName: HTMLInputElement) {
-    console.log(this.serverContentInput);
-
     this.blueprintCreated.emit({
       serverName: serverName.value,
       serverContent: this.serverContentInput.nativeElement.value,
