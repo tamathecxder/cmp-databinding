@@ -12,6 +12,11 @@ export class AppComponent {
     content: 'Just a test!'
   }];
 
+  evenNumbers: number[] = [];
+  oddNumbers: number[] = [];
+
+  isGameStarted: boolean = false;
+
   onServerAdded(serverData: {serverName: string, serverContent: string}) {
     const newLocal = this.serverElements.push({
       type: 'server',
@@ -26,5 +31,23 @@ export class AppComponent {
       name: blueprintData.serverName,
       content: blueprintData.serverContent
     });
+  }
+
+  onGameStarted(data: {odd: number, even: number}) {
+    this.oddNumbers.push(data.odd);
+    this.evenNumbers.push(data.even);
+
+    this.isGameStarted = true;
+  }
+
+  onGameStopped(interval: NodeJS.Timeout) {
+    if (confirm('Are you sure you want to stop the game?')) {
+      clearInterval(interval);
+
+      this.oddNumbers = [];
+      this.evenNumbers = [];
+
+      this.isGameStarted = false;
+    }
   }
 }

@@ -14,4 +14,20 @@
       </app-server-element>
     </div>
   </div>
+
+  <hr>
+
+  <h1>Practice Bindings</h1>
+
+  <div style="display: flex; gap: 1rem; flex-direction: column;">
+    <span>Odd And Even Game</span>
+
+    <app-game-control [isGameStarted]="isGameStarted" (onGameStarted)="onGameStarted($event)" (onGameStopped)="onGameStopped($event)"></app-game-control>
+
+    <div style="margin: 1rem 0;">
+      <app-odd [odds]="oddNumbers"></app-odd>
+
+      <app-even [evens]="evenNumbers"></app-even>
+    </div>
+  </div>
 </div>
