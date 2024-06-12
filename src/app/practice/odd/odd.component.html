@@ -1,0 +1,14 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Odds:</h3>
+  </div>
+  <div class="panel-body">
+    <ng-container *ngIf="oddNumbers.length > 0 else noOddNumbers">
+      <span *ngFor="let odd of oddNumbers">{{ odd }} > </span>
+    </ng-container>
+
+    <ng-template #noOddNumbers>
+      <span>No Odd Numbers</span>
+    </ng-template>
+  </div>
+</div>
