@@ -1,0 +1,14 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Evens:</h3>
+  </div>
+  <div class="panel-body">
+    <ng-container *ngIf="evenNumbers.length > 0 else noEvenNumbers">
+      <span *ngFor="let even of evenNumbers">{{ even }} > </span>
+    </ng-container>
+
+    <ng-template #noEvenNumbers>
+      <span>No Even Numbers</span>
+    </ng-template>
+  </div>
+</div>
