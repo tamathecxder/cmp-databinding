@@ -16,44 +16,44 @@ export class ServerElementComponent {
     static: true
   }) paragraph: ElementRef;
 
-  constructor() {
-    console.log('constructor executed');
-  }
+  // constructor() {
+  //   console.log('constructor executed');
+  // }
 
-  ngOnChanges(simpleChanges: SimpleChanges) {
-    console.log('ngOnChanges executed');
+  // ngOnChanges(simpleChanges: SimpleChanges) {
+  //   console.log('ngOnChanges executed');
 
-    console.log(simpleChanges);
+  //   console.log(simpleChanges);
 
-    console.log("Text content of paragraph ContentChild(): " + this.paragraph.nativeElement.textContent);
-  }
+  //   console.log("Text content of paragraph ContentChild(): " + this.paragraph.nativeElement.textContent);
+  // }
 
-  ngOnInit() {
-    console.log('ngOnInit executed');
-  }
+  // ngOnInit() {
+  //   console.log('ngOnInit executed');
+  // }
 
-  ngDoCheck() {
-    console.log('ngDoCheck executed');
-  }
+  // ngDoCheck() {
+  //   console.log('ngDoCheck executed');
+  // }
 
-  ngAfterContentInit() {
-    console.log('ngAfterContentInit executed');
-    console.log("Text content of paragraph ContentChild(): " + this.paragraph.nativeElement.textContent);
-  }
+  // ngAfterContentInit() {
+  //   console.log('ngAfterContentInit executed');
+  //   console.log("Text content of paragraph ContentChild(): " + this.paragraph.nativeElement.textContent);
+  // }
 
-  ngAfterContentChecked() {
-    console.log('ngAfterContentChecked executed');
-  }
+  // ngAfterContentChecked() {
+  //   console.log('ngAfterContentChecked executed');
+  // }
 
-  ngAfterViewInit() {
-    console.log('ngAfterViewInit executed');
-  }
+  // ngAfterViewInit() {
+  //   console.log('ngAfterViewInit executed');
+  // }
 
-  ngAfterViewChecked() {
-    console.log('ngAfterViewChecked executed');
-  }
+  // ngAfterViewChecked() {
+  //   console.log('ngAfterViewChecked executed');
+  // }
 
-  ngOnDestroy() {
-    console.log('ngOnDestroy executed');
-  }
+  // ngOnDestroy() {
+  //   console.log('ngOnDestroy executed');
+  // }
 }
